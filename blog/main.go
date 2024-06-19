@@ -7,7 +7,7 @@ import (
 
 func main() {
 	engine := tuanframe.New()
-	g := engine.Group("")
+	g := engine.Group("user")
 	g.Get("/hello", func(ctx *tuanframe.Context) {
 		fmt.Fprintln(ctx.W, "hello tuan_frame")
 	})
